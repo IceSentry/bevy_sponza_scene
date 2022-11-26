@@ -4,7 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-bevy = { version = "0.9", features = ["ktx2", "zstd"] }
+# bevy = { version = "0.9", features = ["ktx2", "zstd"] }
+bevy = { path = "../bevy", features = ["ktx2", "zstd"] }
 image = "0.24"
 anyhow = "1.0"
 threadpool = "1.8"

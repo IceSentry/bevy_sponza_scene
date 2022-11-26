@@ -1,11 +1,13 @@
-use std::{f32::consts::PI, num::NonZeroU8};
+use std::{fs::File, io::Write, num::NonZeroU8};
 
 mod camera_controller;
 mod mipmap_generator;
 
 use bevy::{
     core_pipeline::{bloom::BloomSettings, fxaa::Fxaa},
+    diagnostic::{FrameTimeDiagnosticsPlugin, LogDiagnosticsPlugin},
     prelude::*,
+    tasks::IoTaskPool,
 };
 use camera_controller::{CameraController, CameraControllerPlugin};
 use mipmap_generator::{generate_mipmaps, MipmapGeneratorPlugin, MipmapGeneratorSettings};
@@ -33,12 +35,19 @@ pub fn main() {
             color: Color::rgb(1.0, 1.0, 1.0),
             brightness: 0.02,
         })
-        .add_plugins(DefaultPlugins.set(WindowPlugin {
-            window: WindowDescriptor { ..default() },
-            ..default()
-        }))
-        //.add_plugin(LogDiagnosticsPlugin::default())
-        //.add_plugin(FrameTimeDiagnosticsPlugin::default())
+        .add_plugins(
+            DefaultPlugins
+                .set(WindowPlugin {
+                    window: WindowDescriptor { ..default() },
+                    ..default()
+                })
+                .set(AssetPlugin {
+                    watch_for_changes: true,
+                    ..default()
+                }),
+        )
+        .add_plugin(LogDiagnosticsPlugin::default())
+        .add_plugin(FrameTimeDiagnosticsPlugin::default())
         .add_plugin(CameraControllerPlugin)
         // Generating mipmaps takes a minute
         .insert_resource(MipmapGeneratorSettings {
@@ -49,7 +58,13 @@ pub fn main() {
         // Mipmap generation be skipped if ktx2 is used
         .add_system(generate_mipmaps::<StandardMaterial>)
         .add_startup_system(setup)
-        .add_system(proc_scene);
+        .add_system(proc_scene)
+        .add_system(save_scene)
+        .add_system(input_scene)
+        .add_event::<SaveScene>()
+        .add_event::<LoadScene>()
+        .add_system(load_scene)
+        .register_type::<GrifLight>();
 
     app.run();
 }
@@ -57,7 +72,8 @@ pub fn main() {
 #[derive(Component)]
 pub struct PostProcScene;
 
-#[derive(Component)]
+#[derive(Component, Reflect, Default)]
+#[reflect(Component)]
 pub struct GrifLight;
 
 pub fn setup(mut commands: Commands, asset_server: Res<AssetServer>) {
@@ -79,125 +95,10 @@ pub fn setup(mut commands: Commands, asset_server: Res<AssetServer>) {
         })
         .insert(PostProcScene);
 
-    // Sun
-    const HALF_SIZE: f32 = 20.0;
-    commands
-        .spawn(DirectionalLightBundle {
-            transform: Transform::from_rotation(Quat::from_euler(
-                EulerRot::XYZ,
-                PI * -0.43,
-                PI * -0.08,
-                0.0,
-            )),
-            directional_light: DirectionalLight {
-                color: Color::rgb(1.0, 1.0, 0.99),
-                illuminance: 400000.0,
-                shadow_projection: OrthographicProjection {
-                    left: -HALF_SIZE,
-                    right: HALF_SIZE,
-                    bottom: -HALF_SIZE,
-                    top: HALF_SIZE,
-                    near: -10.0 * HALF_SIZE,
-                    far: 10.0 * HALF_SIZE,
-                    ..default()
-                },
-                shadows_enabled: true,
-                shadow_depth_bias: 0.3,
-                shadow_normal_bias: 0.7,
-            },
-            ..default()
-        })
-        .insert(GrifLight);
-
-    // Sun Refl
-    commands
-        .spawn(SpotLightBundle {
-            transform: Transform::from_xyz(2.0, -0.0, -2.0)
-                .looking_at(Vec3::new(0.0, 999.0, 0.0), Vec3::X),
-            spot_light: SpotLight {
-                range: 15.0,
-                intensity: 1000.0,
-                color: Color::rgb(1.0, 0.97, 0.85),
-                shadows_enabled: false,
-                inner_angle: PI * 0.4,
-                outer_angle: PI * 0.5,
-                ..default()
-            },
-            ..default()
-        })
-        .insert(GrifLight);
-
-    // Sun refl 2nd bounce / misc bounces
-    commands
-        .spawn(SpotLightBundle {
-            transform: Transform::from_xyz(2.0, 5.5, -2.0)
-                .looking_at(Vec3::new(0.0, -999.0, 0.0), Vec3::X),
-            spot_light: SpotLight {
-                range: 13.0,
-                intensity: 800.0,
-                color: Color::rgb(1.0, 0.97, 0.85),
-                shadows_enabled: false,
-                inner_angle: PI * 0.3,
-                outer_angle: PI * 0.4,
-                ..default()
-            },
-            ..default()
-        })
-        .insert(GrifLight);
-
-    // sky
-    // seems to be making blocky artifacts. Even if it's the only light.
-    commands
-        .spawn(PointLightBundle {
-            point_light: PointLight {
-                color: Color::rgb(0.8, 0.9, 0.97),
-                intensity: 100000.0,
-                shadows_enabled: false,
-                range: 24.0,
-                radius: 3.0,
-                ..default()
-            },
-            transform: Transform::from_xyz(0.0, 30.0, 0.0),
-            ..default()
-        })
-        .insert(GrifLight);
-
-    // sky refl
-    commands
-        .spawn(SpotLightBundle {
-            transform: Transform::from_xyz(0.0, -2.0, 0.0)
-                .looking_at(Vec3::new(0.0, 999.0, 0.0), Vec3::X),
-            spot_light: SpotLight {
-                range: 11.0,
-                intensity: 300.0,
-                color: Color::rgb(0.8, 0.9, 0.97),
-                shadows_enabled: false,
-                inner_angle: PI * 0.46,
-                outer_angle: PI * 0.49,
-                ..default()
-            },
-            ..default()
-        })
-        .insert(GrifLight);
-
-    // sky low
-    commands
-        .spawn(SpotLightBundle {
-            transform: Transform::from_xyz(3.0, 2.0, 0.0)
-                .looking_at(Vec3::new(0.0, -999.0, 0.0), Vec3::X),
-            spot_light: SpotLight {
-                range: 12.0,
-                radius: 0.0,
-                intensity: 1800.0,
-                color: Color::rgb(0.8, 0.9, 0.95),
-                shadows_enabled: false,
-                inner_angle: PI * 0.34,
-                outer_angle: PI * 0.5,
-                ..default()
-            },
-            ..default()
-        })
-        .insert(GrifLight);
+    // commands.spawn(DynamicSceneBundle {
+    //     scene: asset_server.load("scenes/day.scn.ron"),
+    //     ..default()
+    // });
 
     // Camera
     commands
@@ -226,6 +127,73 @@ pub fn setup(mut commands: Commands, asset_server: Res<AssetServer>) {
         ))
         .insert(CameraController::default().print_controls())
         .insert(Fxaa::default());
+}
+
+struct SaveScene;
+struct LoadScene;
+
+fn input_scene(
+    keyboard_input: Res<Input<KeyCode>>,
+    mut save_scene_events: EventWriter<SaveScene>,
+    mut load_scene_events: EventWriter<LoadScene>,
+) {
+    if keyboard_input.just_pressed(KeyCode::Y) {
+        save_scene_events.send(SaveScene);
+    }
+    if keyboard_input.just_pressed(KeyCode::H) {
+        load_scene_events.send(LoadScene);
+    }
+}
+
+fn load_scene(
+    mut commands: Commands,
+    asset_server: Res<AssetServer>,
+    events: EventReader<LoadScene>,
+) {
+    if !events.is_empty() {
+        events.clear();
+        info!("Loading nigth scene");
+        commands.spawn(DynamicSceneBundle {
+            scene: asset_server.load("scenes/night.scn.ron"),
+            ..default()
+        });
+    }
+}
+
+fn save_scene(world: &mut World) {
+    let mut q = world.resource_mut::<Events<SaveScene>>();
+    if !q.is_empty() {
+        q.clear();
+
+        info!("Saving scene");
+
+        let mut scene_world = World::new();
+
+        for i in 0..26 {
+            scene_world.spawn(PointLightBundle {
+                point_light: PointLight {
+                    color: Color::YELLOW,
+                    ..Default::default()
+                },
+                transform: Transform::from_xyz(i as f32, 5.0, 0.0),
+                ..Default::default()
+            });
+        }
+
+        let type_registry = world.resource::<AppTypeRegistry>();
+        let scene = DynamicScene::from_world(&scene_world, type_registry);
+
+        let serialized_scene = scene.serialize_ron(type_registry).unwrap();
+
+        IoTaskPool::get()
+            .spawn(async move {
+                File::create("assets/scenes/night.scn.ron")
+                    .and_then(|mut file| file.write(serialized_scene.as_bytes()))
+                    .expect("Error while writing scene to file");
+                info!("Saving scene done");
+            })
+            .detach();
+    }
 }
 
 pub fn all_children<F: FnMut(Entity)>(

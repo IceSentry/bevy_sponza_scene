@@ -67,7 +67,7 @@ impl Default for CameraController {
         Self {
             enabled: true,
             initialized: false,
-            sensitivity: 0.25,
+            sensitivity: 0.5,
             key_forward: KeyCode::W,
             key_back: KeyCode::S,
             key_left: KeyCode::A,
