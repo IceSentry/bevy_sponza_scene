@@ -175,7 +175,7 @@ fn save_scene(world: &mut World) {
                     color: Color::YELLOW,
                     ..Default::default()
                 },
-                transform: Transform::from_xyz(i as f32, 5.0, 0.0),
+                transform: Transform::from_xyz(i as f32, 20.0, 0.0),
                 ..Default::default()
             });
         }

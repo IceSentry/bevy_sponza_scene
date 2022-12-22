@@ -1,0 +1,1694 @@
+(
+  entities: {
+    0: (
+      components: {
+        "bevy_pbr::light::PointLight": (
+          color: Rgba(
+            red: 1.0,
+            green: 0.70,
+            blue: 0.0,
+            alpha: 1.0,
+          ),
+          intensity: 800.0,
+          range: 20.0,
+          radius: 0.0,
+          shadows_enabled: true,
+          shadow_depth_bias: 0.02,
+          shadow_normal_bias: 0.6,
+        ),
+        "bevy_pbr::bundle::CubemapVisibleEntities": (),
+        "bevy_render::primitives::CubemapFrusta": (),
+        "bevy_transform::components::transform::Transform": (
+          translation: (
+            x: -13.5,
+            y: 3.5,
+            z: 0.0,
+          ),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+          ),
+        ),
+        "bevy_transform::components::global_transform::GlobalTransform": ((
+          matrix3: (
+            x_axis: (
+              x: 1.0,
+              y: 0.0,
+              z: 0.0,
+            ),
+            y_axis: (
+              x: 0.0,
+              y: 1.0,
+              z: 0.0,
+            ),
+            z_axis: (
+              x: 0.0,
+              y: 0.0,
+              z: 1.0,
+            ),
+          ),
+          translation: (
+            x: 0.0,
+            y: 0.0,
+            z: 0.0,
+          ),
+        )),
+        "bevy_render::view::visibility::Visibility": (
+          is_visible: true,
+        ),
+        "bevy_render::view::visibility::ComputedVisibility": (
+          flags: (
+            bits: 0,
+          ),
+        ),
+      },
+    ),
+    1: (
+      components: {
+        "bevy_pbr::light::PointLight": (
+          color: Rgba(
+            red: 1.0,
+            green: 0.70,
+            blue: 0.0,
+            alpha: 1.0,
+          ),
+          intensity: 800.0,
+          range: 20.0,
+          radius: 0.0,
+          shadows_enabled: true,
+          shadow_depth_bias: 0.02,
+          shadow_normal_bias: 0.6,
+        ),
+        "bevy_pbr::bundle::CubemapVisibleEntities": (),
+        "bevy_render::primitives::CubemapFrusta": (),
+        "bevy_transform::components::transform::Transform": (
+          translation: (
+            x: 15.6,
+            y: 2.75,
+            z: -0.95,
+          ),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+          ),
+        ),
+        "bevy_transform::components::global_transform::GlobalTransform": ((
+          matrix3: (
+            x_axis: (
+              x: 1.0,
+              y: 0.0,
+              z: 0.0,
+            ),
+            y_axis: (
+              x: 0.0,
+              y: 1.0,
+              z: 0.0,
+            ),
+            z_axis: (
+              x: 0.0,
+              y: 0.0,
+              z: 1.0,
+            ),
+          ),
+          translation: (
+            x: 0.0,
+            y: 0.0,
+            z: 0.0,
+          ),
+        )),
+        "bevy_render::view::visibility::Visibility": (
+          is_visible: true,
+        ),
+        "bevy_render::view::visibility::ComputedVisibility": (
+          flags: (
+            bits: 0,
+          ),
+        ),
+      },
+    ),
+    2: (
+      components: {
+        "bevy_pbr::light::PointLight": (
+          color: Rgba(
+            red: 1.0,
+            green: 0.70,
+            blue: 0.0,
+            alpha: 1.0,
+          ),
+          intensity: 800.0,
+          range: 20.0,
+          radius: 0.0,
+          shadows_enabled: true,
+          shadow_depth_bias: 0.02,
+          shadow_normal_bias: 0.6,
+        ),
+        "bevy_pbr::bundle::CubemapVisibleEntities": (),
+        "bevy_render::primitives::CubemapFrusta": (),
+        "bevy_transform::components::transform::Transform": (
+          translation: (
+            x: -10.0,
+            y: 3.5,
+            z: 5.0,
+          ),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+          ),
+        ),
+        "bevy_transform::components::global_transform::GlobalTransform": ((
+          matrix3: (
+            x_axis: (
+              x: 1.0,
+              y: 0.0,
+              z: 0.0,
+            ),
+            y_axis: (
+              x: 0.0,
+              y: 1.0,
+              z: 0.0,
+            ),
+            z_axis: (
+              x: 0.0,
+              y: 0.0,
+              z: 1.0,
+            ),
+          ),
+          translation: (
+            x: 0.0,
+            y: 0.0,
+            z: 0.0,
+          ),
+        )),
+        "bevy_render::view::visibility::Visibility": (
+          is_visible: true,
+        ),
+        "bevy_render::view::visibility::ComputedVisibility": (
+          flags: (
+            bits: 0,
+          ),
+        ),
+      },
+    ),
+    3: (
+      components: {
+        "bevy_pbr::light::PointLight": (
+          color: Rgba(
+            red: 1.0,
+            green: 0.70,
+            blue: 0.0,
+            alpha: 1.0,
+          ),
+          intensity: 800.0,
+          range: 20.0,
+          radius: 0.0,
+          shadows_enabled: true,
+          shadow_depth_bias: 0.02,
+          shadow_normal_bias: 0.6,
+        ),
+        "bevy_pbr::bundle::CubemapVisibleEntities": (),
+        "bevy_render::primitives::CubemapFrusta": (),
+        "bevy_transform::components::transform::Transform": (
+          translation: (
+            x: -6.0,
+            y: 3.5,
+            z: 5.0,
+          ),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+          ),
+        ),
+        "bevy_transform::components::global_transform::GlobalTransform": ((
+          matrix3: (
+            x_axis: (
+              x: 1.0,
+              y: 0.0,
+              z: 0.0,
+            ),
+            y_axis: (
+              x: 0.0,
+              y: 1.0,
+              z: 0.0,
+            ),
+            z_axis: (
+              x: 0.0,
+              y: 0.0,
+              z: 1.0,
+            ),
+          ),
+          translation: (
+            x: 0.0,
+            y: 0.0,
+            z: 0.0,
+          ),
+        )),
+        "bevy_render::view::visibility::Visibility": (
+          is_visible: true,
+        ),
+        "bevy_render::view::visibility::ComputedVisibility": (
+          flags: (
+            bits: 0,
+          ),
+        ),
+      },
+    ),
+    4: (
+      components: {
+        "bevy_pbr::light::PointLight": (
+          color: Rgba(
+            red: 1.0,
+            green: 0.70,
+            blue: 0.0,
+            alpha: 1.0,
+          ),
+          intensity: 800.0,
+          range: 20.0,
+          radius: 0.0,
+          shadows_enabled: true,
+          shadow_depth_bias: 0.02,
+          shadow_normal_bias: 0.6,
+        ),
+        "bevy_pbr::bundle::CubemapVisibleEntities": (),
+        "bevy_render::primitives::CubemapFrusta": (),
+        "bevy_transform::components::transform::Transform": (
+          translation: (
+            x: -1.5,
+            y: 3.5,
+            z: 5.0,
+          ),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+          ),
+        ),
+        "bevy_transform::components::global_transform::GlobalTransform": ((
+          matrix3: (
+            x_axis: (
+              x: 1.0,
+              y: 0.0,
+              z: 0.0,
+            ),
+            y_axis: (
+              x: 0.0,
+              y: 1.0,
+              z: 0.0,
+            ),
+            z_axis: (
+              x: 0.0,
+              y: 0.0,
+              z: 1.0,
+            ),
+          ),
+          translation: (
+            x: 0.0,
+            y: 0.0,
+            z: 0.0,
+          ),
+        )),
+        "bevy_render::view::visibility::Visibility": (
+          is_visible: true,
+        ),
+        "bevy_render::view::visibility::ComputedVisibility": (
+          flags: (
+            bits: 0,
+          ),
+        ),
+      },
+    ),
+    5: (
+      components: {
+        "bevy_pbr::light::PointLight": (
+          color: Rgba(
+            red: 1.0,
+            green: 0.7,
+            blue: 0.0,
+            alpha: 1.0,
+          ),
+          intensity: 800.0,
+          range: 20.0,
+          radius: 0.0,
+          shadows_enabled: true,
+          shadow_depth_bias: 0.02,
+          shadow_normal_bias: 0.6,
+        ),
+        "bevy_pbr::bundle::CubemapVisibleEntities": (),
+        "bevy_render::primitives::CubemapFrusta": (),
+        "bevy_transform::components::transform::Transform": (
+          translation: (
+            x: 2.0,
+            y: 3.5,
+            z: 5.0,
+          ),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+          ),
+        ),
+        "bevy_transform::components::global_transform::GlobalTransform": ((
+          matrix3: (
+            x_axis: (
+              x: 1.0,
+              y: 0.0,
+              z: 0.0,
+            ),
+            y_axis: (
+              x: 0.0,
+              y: 1.0,
+              z: 0.0,
+            ),
+            z_axis: (
+              x: 0.0,
+              y: 0.0,
+              z: 1.0,
+            ),
+          ),
+          translation: (
+            x: 0.0,
+            y: 0.0,
+            z: 0.0,
+          ),
+        )),
+        "bevy_render::view::visibility::Visibility": (
+          is_visible: true,
+        ),
+        "bevy_render::view::visibility::ComputedVisibility": (
+          flags: (
+            bits: 0,
+          ),
+        ),
+      },
+    ),
+    6: (
+      components: {
+        "bevy_pbr::light::PointLight": (
+          color: Rgba(
+            red: 1.0,
+            green: 0.7,
+            blue: 0.0,
+            alpha: 1.0,
+          ),
+          intensity: 800.0,
+          range: 20.0,
+          radius: 0.0,
+          shadows_enabled: true,
+          shadow_depth_bias: 0.02,
+          shadow_normal_bias: 0.6,
+        ),
+        "bevy_pbr::bundle::CubemapVisibleEntities": (),
+        "bevy_render::primitives::CubemapFrusta": (),
+        "bevy_transform::components::transform::Transform": (
+          translation: (
+            x: 6.0,
+            y: 3.5,
+            z: 5.0,
+          ),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+          ),
+        ),
+        "bevy_transform::components::global_transform::GlobalTransform": ((
+          matrix3: (
+            x_axis: (
+              x: 1.0,
+              y: 0.0,
+              z: 0.0,
+            ),
+            y_axis: (
+              x: 0.0,
+              y: 1.0,
+              z: 0.0,
+            ),
+            z_axis: (
+              x: 0.0,
+              y: 0.0,
+              z: 1.0,
+            ),
+          ),
+          translation: (
+            x: 0.0,
+            y: 0.0,
+            z: 0.0,
+          ),
+        )),
+        "bevy_render::view::visibility::Visibility": (
+          is_visible: true,
+        ),
+        "bevy_render::view::visibility::ComputedVisibility": (
+          flags: (
+            bits: 0,
+          ),
+        ),
+      },
+    ),
+    7: (
+      components: {
+        "bevy_pbr::light::PointLight": (
+          color: Rgba(
+            red: 1.0,
+            green: 0.7,
+            blue: 0.0,
+            alpha: 1.0,
+          ),
+          intensity: 800.0,
+          range: 20.0,
+          radius: 0.0,
+          shadows_enabled: true,
+          shadow_depth_bias: 0.02,
+          shadow_normal_bias: 0.6,
+        ),
+        "bevy_pbr::bundle::CubemapVisibleEntities": (),
+        "bevy_render::primitives::CubemapFrusta": (),
+        "bevy_transform::components::transform::Transform": (
+          translation: (
+            x: 10.2,
+            y: 3.5,
+            z: 5.0,
+          ),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+          ),
+        ),
+        "bevy_transform::components::global_transform::GlobalTransform": ((
+          matrix3: (
+            x_axis: (
+              x: 1.0,
+              y: 0.0,
+              z: 0.0,
+            ),
+            y_axis: (
+              x: 0.0,
+              y: 1.0,
+              z: 0.0,
+            ),
+            z_axis: (
+              x: 0.0,
+              y: 0.0,
+              z: 1.0,
+            ),
+          ),
+          translation: (
+            x: 0.0,
+            y: 0.0,
+            z: 0.0,
+          ),
+        )),
+        "bevy_render::view::visibility::Visibility": (
+          is_visible: true,
+        ),
+        "bevy_render::view::visibility::ComputedVisibility": (
+          flags: (
+            bits: 0,
+          ),
+        ),
+      },
+    ),
+    8: (
+      components: {
+        "bevy_pbr::light::PointLight": (
+          color: Rgba(
+            red: 1.0,
+            green: 0.7,
+            blue: 0.0,
+            alpha: 1.0,
+          ),
+          intensity: 800.0,
+          range: 20.0,
+          radius: 0.0,
+          shadows_enabled: true,
+          shadow_depth_bias: 0.02,
+          shadow_normal_bias: 0.6,
+        ),
+        "bevy_pbr::bundle::CubemapVisibleEntities": (),
+        "bevy_render::primitives::CubemapFrusta": (),
+        "bevy_transform::components::transform::Transform": (
+          translation: (
+            x: -10.0,
+            y: 3.5,
+            z: -5.0,
+          ),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+          ),
+        ),
+        "bevy_transform::components::global_transform::GlobalTransform": ((
+          matrix3: (
+            x_axis: (
+              x: 1.0,
+              y: 0.0,
+              z: 0.0,
+            ),
+            y_axis: (
+              x: 0.0,
+              y: 1.0,
+              z: 0.0,
+            ),
+            z_axis: (
+              x: 0.0,
+              y: 0.0,
+              z: 1.0,
+            ),
+          ),
+          translation: (
+            x: 0.0,
+            y: 0.0,
+            z: 0.0,
+          ),
+        )),
+        "bevy_render::view::visibility::Visibility": (
+          is_visible: true,
+        ),
+        "bevy_render::view::visibility::ComputedVisibility": (
+          flags: (
+            bits: 0,
+          ),
+        ),
+      },
+    ),
+    9: (
+      components: {
+        "bevy_pbr::light::PointLight": (
+          color: Rgba(
+            red: 1.0,
+            green: 0.7,
+            blue: 0.0,
+            alpha: 1.0,
+          ),
+          intensity: 800.0,
+          range: 20.0,
+          radius: 0.0,
+          shadows_enabled: true,
+          shadow_depth_bias: 0.02,
+          shadow_normal_bias: 0.6,
+        ),
+        "bevy_pbr::bundle::CubemapVisibleEntities": (),
+        "bevy_render::primitives::CubemapFrusta": (),
+        "bevy_transform::components::transform::Transform": (
+          translation: (
+            x: -6.0,
+            y: 3.5,
+            z: -5.0,
+          ),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+          ),
+        ),
+        "bevy_transform::components::global_transform::GlobalTransform": ((
+          matrix3: (
+            x_axis: (
+              x: 1.0,
+              y: 0.0,
+              z: 0.0,
+            ),
+            y_axis: (
+              x: 0.0,
+              y: 1.0,
+              z: 0.0,
+            ),
+            z_axis: (
+              x: 0.0,
+              y: 0.0,
+              z: 1.0,
+            ),
+          ),
+          translation: (
+            x: 0.0,
+            y: 0.0,
+            z: 0.0,
+          ),
+        )),
+        "bevy_render::view::visibility::Visibility": (
+          is_visible: true,
+        ),
+        "bevy_render::view::visibility::ComputedVisibility": (
+          flags: (
+            bits: 0,
+          ),
+        ),
+      },
+    ),
+    10: (
+      components: {
+        "bevy_pbr::light::PointLight": (
+          color: Rgba(
+            red: 1.0,
+            green: 0.7,
+            blue: 0.0,
+            alpha: 1.0,
+          ),
+          intensity: 800.0,
+          range: 20.0,
+          radius: 0.0,
+          shadows_enabled: true,
+          shadow_depth_bias: 0.02,
+          shadow_normal_bias: 0.6,
+        ),
+        "bevy_pbr::bundle::CubemapVisibleEntities": (),
+        "bevy_render::primitives::CubemapFrusta": (),
+        "bevy_transform::components::transform::Transform": (
+        translation: (
+            x: -1.5,
+            y: 3.5,
+            z: -5.0,
+          ),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+          ),
+        ),
+        "bevy_transform::components::global_transform::GlobalTransform": ((
+          matrix3: (
+            x_axis: (
+              x: 1.0,
+              y: 0.0,
+              z: 0.0,
+            ),
+            y_axis: (
+              x: 0.0,
+              y: 1.0,
+              z: 0.0,
+            ),
+            z_axis: (
+              x: 0.0,
+              y: 0.0,
+              z: 1.0,
+            ),
+          ),
+          translation: (
+            x: 0.0,
+            y: 0.0,
+            z: 0.0,
+          ),
+        )),
+        "bevy_render::view::visibility::Visibility": (
+          is_visible: true,
+        ),
+        "bevy_render::view::visibility::ComputedVisibility": (
+          flags: (
+            bits: 0,
+          ),
+        ),
+      },
+    ),
+    11: (
+      components: {
+        "bevy_pbr::light::PointLight": (
+          color: Rgba(
+            red: 1.0,
+            green: 0.7,
+            blue: 0.0,
+            alpha: 1.0,
+          ),
+          intensity: 800.0,
+          range: 20.0,
+          radius: 0.0,
+          shadows_enabled: true,
+          shadow_depth_bias: 0.02,
+          shadow_normal_bias: 0.6,
+        ),
+        "bevy_pbr::bundle::CubemapVisibleEntities": (),
+        "bevy_render::primitives::CubemapFrusta": (),
+        "bevy_transform::components::transform::Transform": (
+         translation: (
+            x: 2.0,
+            y: 3.5,
+            z: -5.0,
+          ),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+          ),
+        ),
+        "bevy_transform::components::global_transform::GlobalTransform": ((
+          matrix3: (
+            x_axis: (
+              x: 1.0,
+              y: 0.0,
+              z: 0.0,
+            ),
+            y_axis: (
+              x: 0.0,
+              y: 1.0,
+              z: 0.0,
+            ),
+            z_axis: (
+              x: 0.0,
+              y: 0.0,
+              z: 1.0,
+            ),
+          ),
+          translation: (
+            x: 0.0,
+            y: 0.0,
+            z: 0.0,
+          ),
+        )),
+        "bevy_render::view::visibility::Visibility": (
+          is_visible: true,
+        ),
+        "bevy_render::view::visibility::ComputedVisibility": (
+          flags: (
+            bits: 0,
+          ),
+        ),
+      },
+    ),
+    12: (
+      components: {
+        "bevy_pbr::light::PointLight": (
+          color: Rgba(
+            red: 1.0,
+            green: 0.7,
+            blue: 0.0,
+            alpha: 1.0,
+          ),
+          intensity: 800.0,
+          range: 20.0,
+          radius: 0.0,
+          shadows_enabled: true,
+          shadow_depth_bias: 0.02,
+          shadow_normal_bias: 0.6,
+        ),
+        "bevy_pbr::bundle::CubemapVisibleEntities": (),
+        "bevy_render::primitives::CubemapFrusta": (),
+        "bevy_transform::components::transform::Transform": (
+         translation: (
+            x: 6.0,
+            y: 3.5,
+            z: -5.0,
+          ),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+          ),
+        ),
+        "bevy_transform::components::global_transform::GlobalTransform": ((
+          matrix3: (
+            x_axis: (
+              x: 1.0,
+              y: 0.0,
+              z: 0.0,
+            ),
+            y_axis: (
+              x: 0.0,
+              y: 1.0,
+              z: 0.0,
+            ),
+            z_axis: (
+              x: 0.0,
+              y: 0.0,
+              z: 1.0,
+            ),
+          ),
+          translation: (
+            x: 0.0,
+            y: 0.0,
+            z: 0.0,
+          ),
+        )),
+        "bevy_render::view::visibility::Visibility": (
+          is_visible: true,
+        ),
+        "bevy_render::view::visibility::ComputedVisibility": (
+          flags: (
+            bits: 0,
+          ),
+        ),
+      },
+    ),
+    13: (
+      components: {
+        "bevy_pbr::light::PointLight": (
+          color: Rgba(
+            red: 1.0,
+            green: 0.7,
+            blue: 0.0,
+            alpha: 1.0,
+          ),
+          intensity: 800.0,
+          range: 20.0,
+          radius: 0.0,
+          shadows_enabled: true,
+          shadow_depth_bias: 0.02,
+          shadow_normal_bias: 0.6,
+        ),
+        "bevy_pbr::bundle::CubemapVisibleEntities": (),
+        "bevy_render::primitives::CubemapFrusta": (),
+        "bevy_transform::components::transform::Transform": (
+          translation: (
+            x: 10.2,
+            y: 3.5,
+            z: -5.0,
+          ),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+          ),
+        ),
+        "bevy_transform::components::global_transform::GlobalTransform": ((
+          matrix3: (
+            x_axis: (
+              x: 1.0,
+              y: 0.0,
+              z: 0.0,
+            ),
+            y_axis: (
+              x: 0.0,
+              y: 1.0,
+              z: 0.0,
+            ),
+            z_axis: (
+              x: 0.0,
+              y: 0.0,
+              z: 1.0,
+            ),
+          ),
+          translation: (
+            x: 0.0,
+            y: 0.0,
+            z: 0.0,
+          ),
+        )),
+        "bevy_render::view::visibility::Visibility": (
+          is_visible: true,
+        ),
+        "bevy_render::view::visibility::ComputedVisibility": (
+          flags: (
+            bits: 0,
+          ),
+        ),
+      },
+    ),
+    14: (
+      components: {
+        "bevy_pbr::light::PointLight": (
+          color: Rgba(
+            red: 1.0,
+            green: 1.0,
+            blue: 0.0,
+            alpha: 1.0,
+          ),
+          intensity: 800.0,
+          range: 20.0,
+          radius: 0.0,
+          shadows_enabled: false,
+          shadow_depth_bias: 0.02,
+          shadow_normal_bias: 0.6,
+        ),
+        "bevy_pbr::bundle::CubemapVisibleEntities": (),
+        "bevy_render::primitives::CubemapFrusta": (),
+        "bevy_transform::components::transform::Transform": (
+          translation: (
+            x: 14.0,
+            y: 20.0,
+            z: 0.0,
+          ),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+          ),
+        ),
+        "bevy_transform::components::global_transform::GlobalTransform": ((
+          matrix3: (
+            x_axis: (
+              x: 1.0,
+              y: 0.0,
+              z: 0.0,
+            ),
+            y_axis: (
+              x: 0.0,
+              y: 1.0,
+              z: 0.0,
+            ),
+            z_axis: (
+              x: 0.0,
+              y: 0.0,
+              z: 1.0,
+            ),
+          ),
+          translation: (
+            x: 0.0,
+            y: 0.0,
+            z: 0.0,
+          ),
+        )),
+        "bevy_render::view::visibility::Visibility": (
+          is_visible: true,
+        ),
+        "bevy_render::view::visibility::ComputedVisibility": (
+          flags: (
+            bits: 0,
+          ),
+        ),
+      },
+    ),
+    15: (
+      components: {
+        "bevy_pbr::light::PointLight": (
+          color: Rgba(
+            red: 1.0,
+            green: 1.0,
+            blue: 0.0,
+            alpha: 1.0,
+          ),
+          intensity: 800.0,
+          range: 20.0,
+          radius: 0.0,
+          shadows_enabled: false,
+          shadow_depth_bias: 0.02,
+          shadow_normal_bias: 0.6,
+        ),
+        "bevy_pbr::bundle::CubemapVisibleEntities": (),
+        "bevy_render::primitives::CubemapFrusta": (),
+        "bevy_transform::components::transform::Transform": (
+          translation: (
+            x: 15.0,
+            y: 20.0,
+            z: 0.0,
+          ),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+          ),
+        ),
+        "bevy_transform::components::global_transform::GlobalTransform": ((
+          matrix3: (
+            x_axis: (
+              x: 1.0,
+              y: 0.0,
+              z: 0.0,
+            ),
+            y_axis: (
+              x: 0.0,
+              y: 1.0,
+              z: 0.0,
+            ),
+            z_axis: (
+              x: 0.0,
+              y: 0.0,
+              z: 1.0,
+            ),
+          ),
+          translation: (
+            x: 0.0,
+            y: 0.0,
+            z: 0.0,
+          ),
+        )),
+        "bevy_render::view::visibility::Visibility": (
+          is_visible: true,
+        ),
+        "bevy_render::view::visibility::ComputedVisibility": (
+          flags: (
+            bits: 0,
+          ),
+        ),
+      },
+    ),
+    16: (
+      components: {
+        "bevy_pbr::light::PointLight": (
+          color: Rgba(
+            red: 1.0,
+            green: 1.0,
+            blue: 0.0,
+            alpha: 1.0,
+          ),
+          intensity: 800.0,
+          range: 20.0,
+          radius: 0.0,
+          shadows_enabled: false,
+          shadow_depth_bias: 0.02,
+          shadow_normal_bias: 0.6,
+        ),
+        "bevy_pbr::bundle::CubemapVisibleEntities": (),
+        "bevy_render::primitives::CubemapFrusta": (),
+        "bevy_transform::components::transform::Transform": (
+          translation: (
+            x: 16.0,
+            y: 20.0,
+            z: 0.0,
+          ),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+          ),
+        ),
+        "bevy_transform::components::global_transform::GlobalTransform": ((
+          matrix3: (
+            x_axis: (
+              x: 1.0,
+              y: 0.0,
+              z: 0.0,
+            ),
+            y_axis: (
+              x: 0.0,
+              y: 1.0,
+              z: 0.0,
+            ),
+            z_axis: (
+              x: 0.0,
+              y: 0.0,
+              z: 1.0,
+            ),
+          ),
+          translation: (
+            x: 0.0,
+            y: 0.0,
+            z: 0.0,
+          ),
+        )),
+        "bevy_render::view::visibility::Visibility": (
+          is_visible: true,
+        ),
+        "bevy_render::view::visibility::ComputedVisibility": (
+          flags: (
+            bits: 0,
+          ),
+        ),
+      },
+    ),
+    17: (
+      components: {
+        "bevy_pbr::light::PointLight": (
+          color: Rgba(
+            red: 1.0,
+            green: 1.0,
+            blue: 0.0,
+            alpha: 1.0,
+          ),
+          intensity: 800.0,
+          range: 20.0,
+          radius: 0.0,
+          shadows_enabled: false,
+          shadow_depth_bias: 0.02,
+          shadow_normal_bias: 0.6,
+        ),
+        "bevy_pbr::bundle::CubemapVisibleEntities": (),
+        "bevy_render::primitives::CubemapFrusta": (),
+        "bevy_transform::components::transform::Transform": (
+          translation: (
+            x: 17.0,
+            y: 20.0,
+            z: 0.0,
+          ),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+          ),
+        ),
+        "bevy_transform::components::global_transform::GlobalTransform": ((
+          matrix3: (
+            x_axis: (
+              x: 1.0,
+              y: 0.0,
+              z: 0.0,
+            ),
+            y_axis: (
+              x: 0.0,
+              y: 1.0,
+              z: 0.0,
+            ),
+            z_axis: (
+              x: 0.0,
+              y: 0.0,
+              z: 1.0,
+            ),
+          ),
+          translation: (
+            x: 0.0,
+            y: 0.0,
+            z: 0.0,
+          ),
+        )),
+        "bevy_render::view::visibility::Visibility": (
+          is_visible: true,
+        ),
+        "bevy_render::view::visibility::ComputedVisibility": (
+          flags: (
+            bits: 0,
+          ),
+        ),
+      },
+    ),
+    18: (
+      components: {
+        "bevy_pbr::light::PointLight": (
+          color: Rgba(
+            red: 1.0,
+            green: 1.0,
+            blue: 0.0,
+            alpha: 1.0,
+          ),
+          intensity: 800.0,
+          range: 20.0,
+          radius: 0.0,
+          shadows_enabled: false,
+          shadow_depth_bias: 0.02,
+          shadow_normal_bias: 0.6,
+        ),
+        "bevy_pbr::bundle::CubemapVisibleEntities": (),
+        "bevy_render::primitives::CubemapFrusta": (),
+        "bevy_transform::components::transform::Transform": (
+          translation: (
+            x: 18.0,
+            y: 20.0,
+            z: 0.0,
+          ),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+          ),
+        ),
+        "bevy_transform::components::global_transform::GlobalTransform": ((
+          matrix3: (
+            x_axis: (
+              x: 1.0,
+              y: 0.0,
+              z: 0.0,
+            ),
+            y_axis: (
+              x: 0.0,
+              y: 1.0,
+              z: 0.0,
+            ),
+            z_axis: (
+              x: 0.0,
+              y: 0.0,
+              z: 1.0,
+            ),
+          ),
+          translation: (
+            x: 0.0,
+            y: 0.0,
+            z: 0.0,
+          ),
+        )),
+        "bevy_render::view::visibility::Visibility": (
+          is_visible: true,
+        ),
+        "bevy_render::view::visibility::ComputedVisibility": (
+          flags: (
+            bits: 0,
+          ),
+        ),
+      },
+    ),
+    19: (
+      components: {
+        "bevy_pbr::light::PointLight": (
+          color: Rgba(
+            red: 1.0,
+            green: 1.0,
+            blue: 0.0,
+            alpha: 1.0,
+          ),
+          intensity: 800.0,
+          range: 20.0,
+          radius: 0.0,
+          shadows_enabled: false,
+          shadow_depth_bias: 0.02,
+          shadow_normal_bias: 0.6,
+        ),
+        "bevy_pbr::bundle::CubemapVisibleEntities": (),
+        "bevy_render::primitives::CubemapFrusta": (),
+        "bevy_transform::components::transform::Transform": (
+          translation: (
+            x: 19.0,
+            y: 20.0,
+            z: 0.0,
+          ),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+          ),
+        ),
+        "bevy_transform::components::global_transform::GlobalTransform": ((
+          matrix3: (
+            x_axis: (
+              x: 1.0,
+              y: 0.0,
+              z: 0.0,
+            ),
+            y_axis: (
+              x: 0.0,
+              y: 1.0,
+              z: 0.0,
+            ),
+            z_axis: (
+              x: 0.0,
+              y: 0.0,
+              z: 1.0,
+            ),
+          ),
+          translation: (
+            x: 0.0,
+            y: 0.0,
+            z: 0.0,
+          ),
+        )),
+        "bevy_render::view::visibility::Visibility": (
+          is_visible: true,
+        ),
+        "bevy_render::view::visibility::ComputedVisibility": (
+          flags: (
+            bits: 0,
+          ),
+        ),
+      },
+    ),
+    20: (
+      components: {
+        "bevy_pbr::light::PointLight": (
+          color: Rgba(
+            red: 1.0,
+            green: 1.0,
+            blue: 0.0,
+            alpha: 1.0,
+          ),
+          intensity: 800.0,
+          range: 20.0,
+          radius: 0.0,
+          shadows_enabled: false,
+          shadow_depth_bias: 0.02,
+          shadow_normal_bias: 0.6,
+        ),
+        "bevy_pbr::bundle::CubemapVisibleEntities": (),
+        "bevy_render::primitives::CubemapFrusta": (),
+        "bevy_transform::components::transform::Transform": (
+          translation: (
+            x: 20.0,
+            y: 20.0,
+            z: 0.0,
+          ),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+          ),
+        ),
+        "bevy_transform::components::global_transform::GlobalTransform": ((
+          matrix3: (
+            x_axis: (
+              x: 1.0,
+              y: 0.0,
+              z: 0.0,
+            ),
+            y_axis: (
+              x: 0.0,
+              y: 1.0,
+              z: 0.0,
+            ),
+            z_axis: (
+              x: 0.0,
+              y: 0.0,
+              z: 1.0,
+            ),
+          ),
+          translation: (
+            x: 0.0,
+            y: 0.0,
+            z: 0.0,
+          ),
+        )),
+        "bevy_render::view::visibility::Visibility": (
+          is_visible: true,
+        ),
+        "bevy_render::view::visibility::ComputedVisibility": (
+          flags: (
+            bits: 0,
+          ),
+        ),
+      },
+    ),
+    21: (
+      components: {
+        "bevy_pbr::light::PointLight": (
+          color: Rgba(
+            red: 1.0,
+            green: 1.0,
+            blue: 0.0,
+            alpha: 1.0,
+          ),
+          intensity: 800.0,
+          range: 20.0,
+          radius: 0.0,
+          shadows_enabled: false,
+          shadow_depth_bias: 0.02,
+          shadow_normal_bias: 0.6,
+        ),
+        "bevy_pbr::bundle::CubemapVisibleEntities": (),
+        "bevy_render::primitives::CubemapFrusta": (),
+        "bevy_transform::components::transform::Transform": (
+          translation: (
+            x: 21.0,
+            y: 20.0,
+            z: 0.0,
+          ),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+          ),
+        ),
+        "bevy_transform::components::global_transform::GlobalTransform": ((
+          matrix3: (
+            x_axis: (
+              x: 1.0,
+              y: 0.0,
+              z: 0.0,
+            ),
+            y_axis: (
+              x: 0.0,
+              y: 1.0,
+              z: 0.0,
+            ),
+            z_axis: (
+              x: 0.0,
+              y: 0.0,
+              z: 1.0,
+            ),
+          ),
+          translation: (
+            x: 0.0,
+            y: 0.0,
+            z: 0.0,
+          ),
+        )),
+        "bevy_render::view::visibility::Visibility": (
+          is_visible: true,
+        ),
+        "bevy_render::view::visibility::ComputedVisibility": (
+          flags: (
+            bits: 0,
+          ),
+        ),
+      },
+    ),
+    22: (
+      components: {
+        "bevy_pbr::light::PointLight": (
+          color: Rgba(
+            red: 1.0,
+            green: 1.0,
+            blue: 0.0,
+            alpha: 1.0,
+          ),
+          intensity: 800.0,
+          range: 20.0,
+          radius: 0.0,
+          shadows_enabled: false,
+          shadow_depth_bias: 0.02,
+          shadow_normal_bias: 0.6,
+        ),
+        "bevy_pbr::bundle::CubemapVisibleEntities": (),
+        "bevy_render::primitives::CubemapFrusta": (),
+        "bevy_transform::components::transform::Transform": (
+          translation: (
+            x: 22.0,
+            y: 20.0,
+            z: 0.0,
+          ),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+          ),
+        ),
+        "bevy_transform::components::global_transform::GlobalTransform": ((
+          matrix3: (
+            x_axis: (
+              x: 1.0,
+              y: 0.0,
+              z: 0.0,
+            ),
+            y_axis: (
+              x: 0.0,
+              y: 1.0,
+              z: 0.0,
+            ),
+            z_axis: (
+              x: 0.0,
+              y: 0.0,
+              z: 1.0,
+            ),
+          ),
+          translation: (
+            x: 0.0,
+            y: 0.0,
+            z: 0.0,
+          ),
+        )),
+        "bevy_render::view::visibility::Visibility": (
+          is_visible: true,
+        ),
+        "bevy_render::view::visibility::ComputedVisibility": (
+          flags: (
+            bits: 0,
+          ),
+        ),
+      },
+    ),
+    23: (
+      components: {
+        "bevy_pbr::light::PointLight": (
+          color: Rgba(
+            red: 1.0,
+            green: 1.0,
+            blue: 0.0,
+            alpha: 1.0,
+          ),
+          intensity: 800.0,
+          range: 20.0,
+          radius: 0.0,
+          shadows_enabled: false,
+          shadow_depth_bias: 0.02,
+          shadow_normal_bias: 0.6,
+        ),
+        "bevy_pbr::bundle::CubemapVisibleEntities": (),
+        "bevy_render::primitives::CubemapFrusta": (),
+        "bevy_transform::components::transform::Transform": (
+          translation: (
+            x: 23.0,
+            y: 20.0,
+            z: 0.0,
+          ),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+          ),
+        ),
+        "bevy_transform::components::global_transform::GlobalTransform": ((
+          matrix3: (
+            x_axis: (
+              x: 1.0,
+              y: 0.0,
+              z: 0.0,
+            ),
+            y_axis: (
+              x: 0.0,
+              y: 1.0,
+              z: 0.0,
+            ),
+            z_axis: (
+              x: 0.0,
+              y: 0.0,
+              z: 1.0,
+            ),
+          ),
+          translation: (
+            x: 0.0,
+            y: 0.0,
+            z: 0.0,
+          ),
+        )),
+        "bevy_render::view::visibility::Visibility": (
+          is_visible: true,
+        ),
+        "bevy_render::view::visibility::ComputedVisibility": (
+          flags: (
+            bits: 0,
+          ),
+        ),
+      },
+    ),
+    24: (
+      components: {
+        "bevy_pbr::light::PointLight": (
+          color: Rgba(
+            red: 1.0,
+            green: 1.0,
+            blue: 0.0,
+            alpha: 1.0,
+          ),
+          intensity: 800.0,
+          range: 20.0,
+          radius: 0.0,
+          shadows_enabled: false,
+          shadow_depth_bias: 0.02,
+          shadow_normal_bias: 0.6,
+        ),
+        "bevy_pbr::bundle::CubemapVisibleEntities": (),
+        "bevy_render::primitives::CubemapFrusta": (),
+        "bevy_transform::components::transform::Transform": (
+          translation: (
+            x: 24.0,
+            y: 20.0,
+            z: 0.0,
+          ),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+          ),
+        ),
+        "bevy_transform::components::global_transform::GlobalTransform": ((
+          matrix3: (
+            x_axis: (
+              x: 1.0,
+              y: 0.0,
+              z: 0.0,
+            ),
+            y_axis: (
+              x: 0.0,
+              y: 1.0,
+              z: 0.0,
+            ),
+            z_axis: (
+              x: 0.0,
+              y: 0.0,
+              z: 1.0,
+            ),
+          ),
+          translation: (
+            x: 0.0,
+            y: 0.0,
+            z: 0.0,
+          ),
+        )),
+        "bevy_render::view::visibility::Visibility": (
+          is_visible: true,
+        ),
+        "bevy_render::view::visibility::ComputedVisibility": (
+          flags: (
+            bits: 0,
+          ),
+        ),
+      },
+    ),
+    25: (
+      components: {
+        "bevy_pbr::light::PointLight": (
+          color: Rgba(
+            red: 1.0,
+            green: 1.0,
+            blue: 0.0,
+            alpha: 1.0,
+          ),
+          intensity: 800.0,
+          range: 20.0,
+          radius: 0.0,
+          shadows_enabled: false,
+          shadow_depth_bias: 0.02,
+          shadow_normal_bias: 0.6,
+        ),
+        "bevy_pbr::bundle::CubemapVisibleEntities": (),
+        "bevy_render::primitives::CubemapFrusta": (),
+        "bevy_transform::components::transform::Transform": (
+          translation: (
+            x: 25.0,
+            y: 20.0,
+            z: 0.0,
+          ),
+          rotation: (0.0, 0.0, 0.0, 1.0),
+          scale: (
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+          ),
+        ),
+        "bevy_transform::components::global_transform::GlobalTransform": ((
+          matrix3: (
+            x_axis: (
+              x: 1.0,
+              y: 0.0,
+              z: 0.0,
+            ),
+            y_axis: (
+              x: 0.0,
+              y: 1.0,
+              z: 0.0,
+            ),
+            z_axis: (
+              x: 0.0,
+              y: 0.0,
+              z: 1.0,
+            ),
+          ),
+          translation: (
+            x: 0.0,
+            y: 0.0,
+            z: 0.0,
+          ),
+        )),
+        "bevy_render::view::visibility::Visibility": (
+          is_visible: true,
+        ),
+        "bevy_render::view::visibility::ComputedVisibility": (
+          flags: (
+            bits: 0,
+          ),
+        ),
+      },
+    ),
+  },
+)
